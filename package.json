@@ -1,0 +1,58 @@
+{
+  "name": "dsh-video-kit",
+  "version": "1.2.1",
+  "description": "Give DeepSeek Harness eyes on video: one tool call turns a local file or page link into a timestamped transcript plus key-frame images the agent can actually look at (ffmpeg + sherpa-onnx Paraformer + yt-dlp).",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "bin/",
+    "extras/",
+    "install.ps1",
+    "uninstall.ps1",
+    "README.md",
+    "INSTALL.zh-CN.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "postinstall-note": "echo 装完请重启 DeepSeek Harness 并新开会话，详见 README.md"
+  },
+  "keywords": [
+    "browser-automation",
+    "cdp",
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "video",
+    "speech-to-text",
+    "asr",
+    "ffmpeg",
+    "sherpa-onnx",
+    "multimodal",
+    "video-understanding"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shisiuqingqian/dsh-video-kit.git"
+  },
+  "homepage": "https://github.com/shisiuqingqian/dsh-video-kit#readme",
+  "bugs": {
+    "url": "https://github.com/shisiuqingqian/dsh-video-kit/issues"
+  },
+  "author": "shisiuqingqian",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

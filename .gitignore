@@ -1,0 +1,8 @@
+﻿# 发布包走 GitHub Release，不进仓库
+*.tgz
+# Python 缓存
+__pycache__/
+*.pyc
+# 编辑器/系统
+.vscode/
+Thumbs.db
