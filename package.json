@@ -43,13 +43,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuiqingqian/dsh-video-kit.git"
+    "url": "git+https://github.com/shisuiqingqian/dsh-video-kit.git"
   },
-  "homepage": "https://github.com/shuiqingqian/dsh-video-kit#readme",
+  "homepage": "https://github.com/shisuiqingqian/dsh-video-kit#readme",
   "bugs": {
-    "url": "https://github.com/shuiqingqian/dsh-video-kit/issues"
+    "url": "https://github.com/shisuiqingqian/dsh-video-kit/issues"
   },
-  "author": "shuiqingqian",
+  "author": "shisuiqingqian",
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"

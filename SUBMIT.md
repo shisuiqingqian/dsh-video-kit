@@ -10,7 +10,7 @@
 - `package.json` 版本 1.2.1，已声明 `dsh.bundle.patch`，已补 `repository`/`homepage`/`bugs`
 - `cordis.patch.yml` 在仓库根
 - `dsh-video-kit.tgz` 已打好（28.8 KB，15 个文件，**资产名不带版本号**）
-- `market-submission/shuiqingqian__dsh-video-kit.yml` 就是要提的 PR 文件
+- `market-submission/shisuiqingqian__dsh-video-kit.yml` 就是要提的 PR 文件
 - 本目录已 `git init` 并提交过一次
 
 ---
@@ -30,12 +30,12 @@
 在本目录（`C:\Users\23038\Desktop\dsh-video-kit`）开 PowerShell：
 
 ```powershell
-git remote add origin https://github.com/shuiqingqian/dsh-video-kit.git
+git remote add origin https://github.com/shisuiqingqian/dsh-video-kit.git
 git branch -M main
 git push -u origin main
 ```
 
-第一次推会弹出浏览器让你登录 GitHub 授权，登录 `shuiqingqian` 这个账号即可。
+第一次推会弹出浏览器让你登录 GitHub 授权，登录 `shisuiqingqian` 这个账号即可。
 
 验证：仓库页能看到 15 个文件，且首页渲染出 README。
 
@@ -60,7 +60,7 @@ git push -u origin main
 资产名一旦带上版本号，下次发版这个链接就静默 404。
 
 验证：浏览器打开
-https://github.com/shuiqingqian/dsh-video-kit/releases/latest/download/dsh-video-kit.tgz
+https://github.com/shisuiqingqian/dsh-video-kit/releases/latest/download/dsh-video-kit.tgz
 应当直接下载。
 
 ---
@@ -73,12 +73,12 @@ https://github.com/shuiqingqian/dsh-video-kit/releases/latest/download/dsh-video
 4. 文件名填（注意是双下划线）：
 
 ```
-data/plugins/shuiqingqian__dsh-video-kit.yml
+data/plugins/shisuiqingqian__dsh-video-kit.yml
 ```
 
-5. 内容贴本目录 `market-submission/shuiqingqian__dsh-video-kit.yml` 全部内容
-6. Commit message 填 `Add shuiqingqian/dsh-video-kit` → **Propose new file**
-7. 回到原仓库点 **Compare & pull request**，标题 `Add shuiqingqian/dsh-video-kit`
+5. 内容贴本目录 `market-submission/shisuiqingqian__dsh-video-kit.yml` 全部内容
+6. Commit message 填 `Add shisuiqingqian/dsh-video-kit` → **Propose new file**
+7. 回到原仓库点 **Compare & pull request**，标题 `Add shisuiqingqian/dsh-video-kit`
 8. 正文（可选但建议）贴：
 
 ```
@@ -106,13 +106,13 @@ CI 依次检查：
 ## 装到别人机器上是什么命令
 
 ```bash
-dsh plugin --profile web add "https://github.com/shuiqingqian/dsh-video-kit/releases/latest/download/dsh-video-kit.tgz"
+dsh plugin --profile web add "https://github.com/shisuiqingqian/dsh-video-kit/releases/latest/download/dsh-video-kit.tgz"
 ```
 
 或从源码构建：
 
 ```bash
-dsh plugin --profile web add github:shuiqingqian/dsh-video-kit
+dsh plugin --profile web add github:shisuiqingqian/dsh-video-kit
 ```
 
 装完重启 DSH，新会话里出现 `video_read` / `video_discover` / `video_kit_setup`。
