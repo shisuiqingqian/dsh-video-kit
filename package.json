@@ -1,6 +1,6 @@
 {
   "name": "dsh-video-kit",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Give DeepSeek Harness eyes on video: one tool call turns a local file or page link into a timestamped transcript plus key-frame images the agent can actually look at (ffmpeg + sherpa-onnx Paraformer + yt-dlp).",
   "type": "module",
   "main": "index.js",

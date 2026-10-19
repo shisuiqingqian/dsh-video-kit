@@ -1,8 +1,12 @@
 # dsh-video-kit —— bundle 形式的挂载声明
 #
-# 仅当本包被列在 profile 的 dsh.profile.bundles 里时，DSH 才会读取这个文件。
-# 常规安装（install.ps1）是把挂载块写进 profile 的 cordis.patch.yml，
-# 并把本包从 bundles 里移除，二者只能用其一，同时生效会重复注册工具。
+# 仅当本包被列在 profile 的 dsh.profile.bundles 里、或以 bundle 形式安装时，
+# DSH 才会读取这个文件。手动安装（install.ps1）是把挂载块写进 profile 的
+# cordis.patch.yml，二者只能用其一，同时生效会重复注册工具。
+#
+# name 必须写包名（与 dsh-better-sidebar、beauticode-dsh 等一致），
+# 不要写 "./index.js"：从市场装完后包位于 profile 的 node_modules 顶层，
+# 包名才能被解析到。
 - insert:
     - id: tool-video-kit
-      name: "./index.js"
+      name: "dsh-video-kit"
